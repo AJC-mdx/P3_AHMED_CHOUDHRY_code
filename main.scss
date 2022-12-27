@@ -1,11 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Shrikhand:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+//styling for the whole page
+*{
+    font-family: Roboto;
+    max-width: 600px;
+    text-align: center;
+}
 // colours
 $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
 
-.test {
-    color: $primary;
-    border: solid 10px $secondary;
-    background-color: $tertiary;
+//header
+.mainLogo {
+    box-shadow: 2px 2px 12px grey;
+    margin-top: -10px;
+    padding: 9px;
+}
+.logo {
+    font-family: Shrikhand;
 }
 
+.location {
+    background-color: #f2f2f2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -20px;
+}
+
+.bookMenu {
+    background-color: #f9f9f9;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: -20px;
+}
+
+.exploreButton {
+    border-radius: 20px;
+    border: hidden;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to bottom, rgb(243, 146, 243), $primary);
+}
