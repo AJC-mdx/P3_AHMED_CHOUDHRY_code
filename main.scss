@@ -45,13 +45,13 @@ $tertiary: #99E2D0;
 }
 
 //main
-
-//how it works
 .titles {
     text-align: left;
     margin-left: 10px;
+    padding-top: 30px;
 }
 
+//how it works
 .HIWoptions {
     box-shadow: 2px 2px 12px grey;
     margin: 20px;
@@ -75,4 +75,58 @@ $tertiary: #99E2D0;
     float: left;
     margin-left: -30px;
     margin-top: -5px;
+}
+
+//restaurants
+.restaurants-section {
+    background-color: #f9f9f9;
+    padding-bottom: 30px;
+}
+  
+.menuImg {
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.menuText {
+    width: 290px;
+    border: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    margin-top: -5px;
+    margin-left: 43px;
+    box-shadow: 2px 2px 12px grey;
+    margin-bottom: 20px;
+}
+.menuText1 {
+    text-align: left;
+    margin-left: 10px;
+}
+.heartIcon {
+    float: right;
+    margin-top: -30px;
+    margin-right: 20px;
+}
+
+//footer
+.footer {
+    background-color: rgb(55, 54, 54);
+    color: white;
+    margin-top: -10px;
+}
+.footerTitle {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.footerText {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.footerBottom {
+    padding-bottom: 30px;
 }
