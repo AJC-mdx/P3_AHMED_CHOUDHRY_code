@@ -81,8 +81,12 @@ $tertiary: #99E2D0;
 .restaurants-section {
     background-color: #f9f9f9;
     padding-bottom: 30px;
+    margin-top: 50px;
 }
   
+.menuOptions {
+    position: relative;
+}
 .menuImg {
     height: 150px;
     width: 300px;
@@ -110,6 +114,22 @@ $tertiary: #99E2D0;
     float: right;
     margin-top: -30px;
     margin-right: 20px;
+}
+
+.newTag {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 260px;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $tertiary;
+    color: #1b6f5a;
+    border-radius: 5px;
+}
+.newTag2 {
+    margin-top: -140px;
+    margin-left: 260px;
 }
 
 //footer
