@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 * {
   font-family: Roboto;
-  max-width: 600px;
+  max-width: 400px;
   text-align: center;
 }
 
@@ -36,4 +36,38 @@
   padding: 10px;
   color: white;
   background: linear-gradient(to bottom, rgb(243, 146, 243), #9356DC);
+}
+
+.titles {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.HIWoptions {
+  box-shadow: 2px 2px 12px grey;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+}
+
+.HIWicon {
+  float: left;
+  margin-left: 20px;
+  margin-right: -20px;
+}
+
+.number {
+  background-color: #9356DC;
+  color: white;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-radius: 100%;
+  float: left;
+  margin-left: -30px;
+  margin-top: -5px;
 }/*# sourceMappingURL=main.css.map */
