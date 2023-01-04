@@ -169,8 +169,13 @@
 }
 
 .restaurantImg {
+  height: 260px;
   width: 360px;
   margin-top: -21px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 60%;
+     object-position: 60%;
 }
 
 .restaurantMenu {
@@ -232,5 +237,5 @@
 }
 
 .menu-footer {
-  margin-top: 1220px;
+  margin-top: 1160px;
 }/*# sourceMappingURL=main.css.map */

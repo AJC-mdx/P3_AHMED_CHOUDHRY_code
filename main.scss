@@ -175,8 +175,11 @@ $tertiary: #99E2D0;
 }
 
 .restaurantImg {
+    height: 260px;
     width: 360px;
     margin-top: -21px;
+    object-fit: cover;
+    object-position: 60%;
 }
 
 .restaurantMenu {
@@ -238,5 +241,5 @@ $tertiary: #99E2D0;
 
 
 .menu-footer {
-    margin-top: 1220px;
+    margin-top: 1160px;
 }
