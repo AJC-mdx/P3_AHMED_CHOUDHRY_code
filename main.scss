@@ -211,15 +211,18 @@ $tertiary: #99E2D0;
 .menu-option {
     text-align: left;
     font-size: large;
+    margin-bottom: 2px;
 }
 
 .menu-text {
     text-align: left;
+    font-size: small;
 }
 
 .menu-price {
     text-align: right;
     margin-top: -20px;
+    font-size: small;
 }
 
 .orderButton {
