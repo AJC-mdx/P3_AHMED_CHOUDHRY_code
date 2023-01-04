@@ -102,7 +102,7 @@
   border-bottom-right-radius: 20px;
   padding: 5px;
   margin-top: -5px;
-  margin-left: 43px;
+  margin-left: 29px;
   box-shadow: 2px 2px 12px grey;
   margin-bottom: 20px;
   color: black;
@@ -122,7 +122,7 @@
 .newTag {
   position: absolute;
   margin-top: 10px;
-  margin-left: 260px;
+  margin-left: 250px;
   padding: 3px;
   padding-left: 20px;
   padding-right: 20px;
@@ -132,8 +132,8 @@
 }
 
 .newTag2 {
-  margin-top: -140px;
-  margin-left: 260px;
+  margin-top: -145px;
+  margin-left: 250px;
 }
 
 .footer {
@@ -155,4 +155,79 @@
 
 .footerBottom {
   padding-bottom: 30px;
+}
+
+.menu-title {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.backArrow {
+  float: left;
+  margin-top: 7px;
+  color: rgb(55, 54, 54);
+}
+
+.restaurantImg {
+  width: 360px;
+  margin-top: -21px;
+}
+
+.restaurantMenu {
+  position: absolute;
+  background-color: #f2f2f2;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 360px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-top: -50px;
+}
+
+.menuHeartIcon {
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.header-text {
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.header-UL {
+  border-bottom: solid 3px #99E2D0;
+  width: 40px;
+  margin-left: 30px;
+  margin-top: -15px;
+}
+
+.menu-option {
+  text-align: left;
+  font-size: large;
+}
+
+.menu-text {
+  text-align: left;
+}
+
+.menu-price {
+  text-align: right;
+  margin-top: -20px;
+}
+
+.orderButton {
+  padding: 15px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 40px;
+  font-size: larger;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.menu-footer {
+  margin-top: 1220px;
 }/*# sourceMappingURL=main.css.map */
