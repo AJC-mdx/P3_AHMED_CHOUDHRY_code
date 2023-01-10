@@ -405,4 +405,39 @@
     margin-top: 10px;
     margin-left: 220px;
   }
+  .restaurantImg {
+    height: 260px;
+    width: 100%;
+    margin-top: -21px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 60%;
+       object-position: 60%;
+  }
+  .restaurantMenu {
+    width: 99%;
+    margin-top: -20px;
+  }
+  .full-menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+  }
+  .choices {
+    width: 330px;
+    margin-top: 30px;
+    margin-right: 100px;
+  }
+  .orderButton {
+    margin-top: 5%;
+  }
+  .menu-footer {
+    margin-top: 39%;
+  }
+  .menu-footer2 {
+    margin-top: 46%;
+  }
+  .menu-footer4 {
+    margin-top: 39%;
+  }
 }/*# sourceMappingURL=main.css.map */
