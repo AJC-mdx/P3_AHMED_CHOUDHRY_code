@@ -4,7 +4,7 @@
 //styling for the whole page
 *{
     font-family: Roboto;
-    max-width: 400px;
+    max-width: 100%;
     text-align: center;
     text-decoration: none;
 }
@@ -157,11 +157,14 @@ $tertiary: #99E2D0;
     padding-bottom: 30px;
 }
 
+.contact {
+    text-decoration: none;
+    color: white;
+}
+
 
 /////MENU PAGES\\\\\
 
-
-/////MENU PAGE 1\\\\\\
 
 .menu-title {
     text-align: left;
@@ -250,4 +253,206 @@ $tertiary: #99E2D0;
 /////MENU PAGE 4\\\\\\
 .menu-footer4 {
     margin-top: 1185px;
+}
+
+
+/////TABLET VERSION\\\\\
+@media only screen and (min-width:401px) and (max-width:900px) {
+    body {
+      max-width: 100%;
+    }
+
+    //header
+    .mainLogo {
+        font-size: 300%;
+    }
+
+    .location {
+        font-size: 150%;
+    }
+
+    .bookMenu {
+        font-size: 150%;
+        margin-top: -3.5%;
+    }
+
+    .exploreButton {
+        font-size: 110%;
+        border-radius: 40px;
+    }
+
+    //main
+.titles {
+    font-size: 200%;
+}
+
+//how it works
+.HIWoptions {
+    font-size: 200%;
+}
+.HIWicon {
+    float: left;
+    margin-left: 10%;
+    margin-right: -10%;
+}
+.number {
+    margin-left: -5%;
+}
+
+//restaurants
+.restaurants-section {
+    padding-bottom: 9%;
+    margin-top: 10%;
+}
+
+.menuOptions {
+    margin-left: 5%;
+}
+  
+.first-half {
+    display: flex;
+    flex-direction: row;
+}
+.second-half {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuImg {
+    height: 200px;
+    width: 350px;
+}
+.menuText {
+    width: 340px;
+    padding: 5px;
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10%;
+}
+.menuText1 {
+    font-size: larger;
+}
+.heartIcon {
+    font-size: larger;
+}
+
+.newTag {
+    margin-top: 2%;
+    margin-left: 35%;
+}
+.newTag2 {
+    margin-top: 2%;
+    margin-left: 35%;
+}
+
+//footer
+.footer {
+    font-size: larger;
+}
+
+
+/////MENU PAGE\\\\\
+
+
+
+}
+
+
+/////DESKTOP VERSION\\\\\
+
+
+
+@media only screen and (min-width: 900px) {
+
+    
+
+/////INDEX PAGE\\\\\
+
+
+
+//how it works
+.HIWoptions-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.HIWoptions {
+    box-shadow: 2px 2px 12px grey;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    width: 20%;
+}
+.HIWicon {
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+
+//restaurants
+.restaurants-section {
+    background-color: #f9f9f9;
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+  
+.first-half {
+    display: flex;
+    flex-direction: row;
+}
+.second-half {
+    display: flex;
+    flex-direction: row;
+    margin-left: 750px;
+    margin-top: -218px;
+}
+.menuOption1 {
+    margin-left: 5%;
+    margin-right: 3%;
+}
+.menuOption2 {
+    margin-right: 3%;
+}
+.menuOption3 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.menuOption4 {
+    margin-left: 3%;
+}
+.menuImg {
+    height: 150px;
+    width: 160%;
+    object-fit: cover;
+    object-position: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.menuText {
+    margin-left: 0px;
+}
+.heartIcon {
+    float: right;
+    margin-top: -30px;
+    margin-right: 20px;
+}
+
+.newTag {
+    margin-top: 10px;
+    margin-left: 220px;
+}
+.newTag2 {
+    margin-top: 10px;
+    margin-left: 220px;
+}
+
+
+/////MENU PAGE\\\\\
+
+
+
 }

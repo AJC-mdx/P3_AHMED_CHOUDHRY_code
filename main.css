@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 * {
   font-family: Roboto;
-  max-width: 400px;
+  max-width: 100%;
   text-align: center;
   text-decoration: none;
 }
@@ -157,6 +157,11 @@
   padding-bottom: 30px;
 }
 
+.contact {
+  text-decoration: none;
+  color: white;
+}
+
 .menu-title {
   text-align: left;
   margin-left: 30px;
@@ -246,4 +251,158 @@
 
 .menu-footer4 {
   margin-top: 1185px;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+  body {
+    max-width: 100%;
+  }
+  .mainLogo {
+    font-size: 300%;
+  }
+  .location {
+    font-size: 150%;
+  }
+  .bookMenu {
+    font-size: 150%;
+    margin-top: -3.5%;
+  }
+  .exploreButton {
+    font-size: 110%;
+    border-radius: 40px;
+  }
+  .titles {
+    font-size: 200%;
+  }
+  .HIWoptions {
+    font-size: 200%;
+  }
+  .HIWicon {
+    float: left;
+    margin-left: 10%;
+    margin-right: -10%;
+  }
+  .number {
+    margin-left: -5%;
+  }
+  .restaurants-section {
+    padding-bottom: 9%;
+    margin-top: 10%;
+  }
+  .menuOptions {
+    margin-left: 5%;
+  }
+  .first-half {
+    display: flex;
+    flex-direction: row;
+  }
+  .second-half {
+    display: flex;
+    flex-direction: row;
+  }
+  .menuImg {
+    height: 200px;
+    width: 350px;
+  }
+  .menuText {
+    width: 340px;
+    padding: 5px;
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10%;
+  }
+  .menuText1 {
+    font-size: larger;
+  }
+  .heartIcon {
+    font-size: larger;
+  }
+  .newTag {
+    margin-top: 2%;
+    margin-left: 35%;
+  }
+  .newTag2 {
+    margin-top: 2%;
+    margin-left: 35%;
+  }
+  .footer {
+    font-size: larger;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .HIWoptions-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .HIWoptions {
+    box-shadow: 2px 2px 12px grey;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    width: 20%;
+  }
+  .HIWicon {
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+  .restaurants-section {
+    background-color: #f9f9f9;
+    padding-bottom: 30px;
+    margin-top: 50px;
+  }
+  .first-half {
+    display: flex;
+    flex-direction: row;
+  }
+  .second-half {
+    display: flex;
+    flex-direction: row;
+    margin-left: 750px;
+    margin-top: -218px;
+  }
+  .menuOption1 {
+    margin-left: 5%;
+    margin-right: 3%;
+  }
+  .menuOption2 {
+    margin-right: 3%;
+  }
+  .menuOption3 {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .menuOption4 {
+    margin-left: 3%;
+  }
+  .menuImg {
+    height: 150px;
+    width: 160%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 60%;
+       object-position: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .menuText {
+    margin-left: 0px;
+  }
+  .heartIcon {
+    float: right;
+    margin-top: -30px;
+    margin-right: 20px;
+  }
+  .newTag {
+    margin-top: 10px;
+    margin-left: 220px;
+  }
+  .newTag2 {
+    margin-top: 10px;
+    margin-left: 220px;
+  }
 }/*# sourceMappingURL=main.css.map */
