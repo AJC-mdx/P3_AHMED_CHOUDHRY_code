@@ -547,17 +547,74 @@ $tertiary: #99E2D0;
     background-color: red;
 }
 
-//loadscreen
-.loadIcon {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
+
+
+
+//loading screen
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  animation: disappear 2s linear;
+  animation-fill-mode: forwards;
+}
+
+.loader {
+    width: 70px;
+    height: 70px;
+    border: 10px solid #f2f2f2;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+    border-top-color: $primary;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: 0.5s spin infinite linear;
+    animation-delay: -1s;
+    animation-fill-mode: forwards;
+ }  
+ 
+ 
+ @keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+
+@keyframes disappear {
+    99% {visibility: visible;}
+    100% {visibility: hidden;}
+}
+
+//menu gradual appearance
+
+.entrees {
+    animation: 2s dish 2s linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+.main-dish {
+    animation: 2s dish 2s linear;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+.desserts {
+    animation: 2s dish 2s linear;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes dish {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
