@@ -63,6 +63,7 @@ $tertiary: #99E2D0;
     padding: 20px;
     border-radius: 20px;
     background-color: #f9f9f9;
+    transition: 1s;
 }
 .HIWicon {
     float: left;
@@ -415,14 +416,10 @@ $tertiary: #99E2D0;
     flex-direction: row;
 }
 .HIWoptions {
-    box-shadow: 2px 2px 12px grey;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 0;
     margin-top: 0;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #f9f9f9;
     width: 20%;
 }
 .HIWicon {
@@ -534,4 +531,13 @@ $tertiary: #99E2D0;
     margin-top: 39%;
 }
 
+}
+
+
+/*Animations Animations Animations Animations Animations Animations Animations Animations Animations Animations Animations Animations*/
+
+.HIWoptions:hover {
+    background-color: #ecddff;
+    box-shadow: 7px 7px 17px grey;
+    cursor: pointer;
 }
