@@ -483,34 +483,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }*/
-@-webkit-keyframes fill {
-  0% {
-    width: 0;
-  }
-  10% {
-    width: 10px;
-  }
-  50% {
-    width: 50px;
-  }
-  100% {
-    width: 100px;
-  }
-}
-@keyframes fill {
-  0% {
-    width: 0;
-  }
-  10% {
-    width: 10px;
-  }
-  50% {
-    width: 50px;
-  }
-  100% {
-    width: 100px;
-  }
-}
 .heart-icon-container:hover .heartIcon, .heart-icon-container .filled-heart {
   display: none;
 }
@@ -519,7 +491,7 @@
   display: inline;
 }
 
-.bar {
+.heart2 {
   rotate: 180deg;
   font-size: 20px;
 }
@@ -532,6 +504,17 @@
   margin-top: 100px;
   rotate: 180deg;
   width: 20px;
+}
+
+@-webkit-keyframes fill {
+  0% {
+    height: 0;
+    background-color: #9356DC;
+  }
+  100% {
+    height: 19px;
+    background-color: #9356DC;
+  }
 }
 
 @keyframes fill {
@@ -652,5 +635,77 @@
   }
   100% {
     opacity: 1;
+  }
+}
+.checkmark {
+  height: 40px;
+  margin-top: 20px;
+  font-size: 36px;
+  visibility: hidden;
+}
+
+.choices:hover .checkmark {
+  -webkit-animation: appear 1s linear;
+          animation: appear 1s linear;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes appear {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.bar {
+  position: relative;
+  background-color: green;
+  height: 75px;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  width: 0%;
+  margin-top: 30px;
+  opacity: 1;
+  rotate: 0deg;
+  float: right;
+  margin-top: -45px;
+  margin-right: -20px;
+}
+
+.choices:hover .bar {
+  -webkit-animation: tick 1s linear;
+          animation: tick 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes tick {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70px;
+  }
+}
+
+@keyframes tick {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70px;
   }
 }/*# sourceMappingURL=main.css.map */

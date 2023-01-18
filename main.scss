@@ -554,13 +554,6 @@ $tertiary: #99E2D0;
 
 //heart button effects
 
-@keyframes fill {
-    0% {width: 0;}
-    10% {width: 10px;}
-    50% {width: 50px;}
-    100% {width: 100px;}
-}
-
 .heart-icon-container:hover .heartIcon, .heart-icon-container .filled-heart {
     display: none;
 }
@@ -570,7 +563,7 @@ $tertiary: #99E2D0;
 }
 
 
-.bar {
+.heart2 {
     rotate: 180deg;
     font-size: 20px;
 }
@@ -658,3 +651,48 @@ $tertiary: #99E2D0;
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
+
+
+//menu tick effect
+
+.checkmark {
+    height: 40px;
+    margin-top: 20px;
+    font-size: 36px;
+    visibility: hidden;
+}
+
+.choices:hover .checkmark {
+    animation: appear 1s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {visibility: hidden;}
+    100% {visibility: visible;}
+}
+
+.bar {
+    position: relative;
+    background-color: green;
+    height: 75px;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+    width:  0%;
+    margin-top: 30px;
+    opacity: 1;
+    rotate: 0deg;
+    float: right;
+    margin-top: -45px;
+    margin-right: -20px;
+}
+.choices:hover .bar {
+    animation: tick 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tick {
+    0%   { width: 0;}
+    100% { width: 70px;}
+  }
