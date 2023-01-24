@@ -117,13 +117,6 @@ $tertiary: #99E2D0;
     text-align: left;
     margin-left: 10px;
 }
-.heartIcon, .filled-heart {
-    position: relative;
-    float: right;
-    margin-top: -30px;
-    margin-right: 20px;
-    transition: 4s;
-}
 
 .newTag {
     position: absolute;
@@ -137,7 +130,7 @@ $tertiary: #99E2D0;
     border-radius: 5px;
 }
 .newTag2 {
-    margin-top: -145px;
+    margin-top: 10px;
     margin-left: 250px;
 }
 
@@ -343,9 +336,6 @@ $tertiary: #99E2D0;
 .menuText1 {
     font-size: larger;
 }
-.heartIcon {
-    font-size: larger;
-}
 
 .newTag {
     margin-top: 2%;
@@ -354,6 +344,10 @@ $tertiary: #99E2D0;
 .newTag2 {
     margin-top: 2%;
     margin-left: 35%;
+}
+
+.heart {
+    margin-right: 50px;
 }
 
 //footer
@@ -452,7 +446,7 @@ $tertiary: #99E2D0;
     display: flex;
     flex-direction: row;
     margin-left: 750px;
-    margin-top: -218px;
+    margin-top: -238px;
 }
 .menuOption1 {
     margin-left: 5%;
@@ -478,11 +472,6 @@ $tertiary: #99E2D0;
 }
 .menuText {
     margin-left: 0px;
-}
-.heartIcon {
-    float: right;
-    margin-top: -30px;
-    margin-right: 20px;
 }
 
 .newTag {
@@ -554,23 +543,14 @@ $tertiary: #99E2D0;
 
 //heart button effects
 
-.heart-icon-container:hover .heartIcon, .heart-icon-container .filled-heart {
-    display: none;
-}
-
-.heart-icon-container:hover .filled-heart {
-    display: inline;
-}
-
-
-.heart2 {
+.heart {
     position: relative;
     z-index: 1;
     rotate: 180deg;
     margin-left: -230px;
     margin-bottom: -28px;
 }
-.bg {
+.fill-heart {
     position: absolute;
     background-color: red;
     height: 0%;
@@ -582,7 +562,7 @@ $tertiary: #99E2D0;
     rotate: 180deg;
 }
 
-.heart-container:hover .bg{
+.heart-container:hover .fill-heart{
     animation: fill 1s linear;
     animation-fill-mode: forwards;
 }
@@ -624,14 +604,14 @@ $tertiary: #99E2D0;
  }  
  
  
- /*@keyframes spin {
+ @keyframes spin {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-}*/
+}
 
 @keyframes disappear {
     99% {visibility: visible;}

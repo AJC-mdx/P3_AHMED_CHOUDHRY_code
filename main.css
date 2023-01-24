@@ -114,14 +114,6 @@
   margin-left: 10px;
 }
 
-.heartIcon, .filled-heart {
-  position: relative;
-  float: right;
-  margin-top: -30px;
-  margin-right: 20px;
-  transition: 4s;
-}
-
 .newTag {
   position: absolute;
   margin-top: 10px;
@@ -135,7 +127,7 @@
 }
 
 .newTag2 {
-  margin-top: -145px;
+  margin-top: 10px;
   margin-left: 250px;
 }
 
@@ -325,9 +317,6 @@
   .menuText1 {
     font-size: larger;
   }
-  .heartIcon {
-    font-size: larger;
-  }
   .newTag {
     margin-top: 2%;
     margin-left: 35%;
@@ -335,6 +324,9 @@
   .newTag2 {
     margin-top: 2%;
     margin-left: 35%;
+  }
+  .heart {
+    margin-right: 50px;
   }
   .footer {
     font-size: larger;
@@ -399,7 +391,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 750px;
-    margin-top: -218px;
+    margin-top: -238px;
   }
   .menuOption1 {
     margin-left: 5%;
@@ -427,11 +419,6 @@
   }
   .menuText {
     margin-left: 0px;
-  }
-  .heartIcon {
-    float: right;
-    margin-top: -30px;
-    margin-right: 20px;
   }
   .newTag {
     margin-top: 10px;
@@ -484,15 +471,7 @@
   cursor: pointer;
 }
 
-.heart-icon-container:hover .heartIcon, .heart-icon-container .filled-heart {
-  display: none;
-}
-
-.heart-icon-container:hover .filled-heart {
-  display: inline;
-}
-
-.heart2 {
+.heart {
   position: relative;
   z-index: 1;
   rotate: 180deg;
@@ -500,7 +479,7 @@
   margin-bottom: -28px;
 }
 
-.bg {
+.fill-heart {
   position: absolute;
   background-color: red;
   height: 0%;
@@ -512,7 +491,7 @@
   rotate: 180deg;
 }
 
-.heart-container:hover .bg {
+.heart-container:hover .fill-heart {
   -webkit-animation: fill 1s linear;
           animation: fill 1s linear;
   -webkit-animation-fill-mode: forwards;
@@ -569,14 +548,23 @@
   font-size: larger;
 }
 
-/*@keyframes spin {
+@-webkit-keyframes spin {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-}*/
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 @-webkit-keyframes disappear {
   99% {
     visibility: visible;
