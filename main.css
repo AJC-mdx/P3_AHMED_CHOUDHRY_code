@@ -120,7 +120,6 @@
   margin-top: -30px;
   margin-right: 20px;
   transition: 4s;
-  color: #9356DC;
 }
 
 .newTag {
@@ -222,11 +221,13 @@
   text-align: left;
   font-size: large;
   margin-bottom: 2px;
+  text-overflow: ellipsis;
 }
 
 .menu-text {
   text-align: left;
   font-size: small;
+  text-overflow: ellipsis;
 }
 
 .menu-price {
@@ -255,6 +256,11 @@
 
 .menu-footer4 {
   margin-top: 1185px;
+}
+
+.choices {
+  position: relative;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 401px) and (max-width: 900px) {
@@ -478,11 +484,6 @@
   cursor: pointer;
 }
 
-/*.heartIcon:hover {
-    background-color: red;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}*/
 .heart-icon-container:hover .heartIcon, .heart-icon-container .filled-heart {
   display: none;
 }
@@ -492,39 +493,47 @@
 }
 
 .heart2 {
+  position: relative;
+  z-index: 1;
   rotate: 180deg;
-  font-size: 20px;
+  margin-left: -230px;
+  margin-bottom: -28px;
 }
 
 .bg {
   position: absolute;
+  background-color: red;
   height: 0%;
-  -webkit-animation: fill 5s infinite;
-          animation: fill 5s infinite;
-  margin-top: 100px;
-  rotate: 180deg;
   width: 20px;
+  margin-left: 20px;
+}
+
+.heart-container {
+  rotate: 180deg;
+}
+
+.heart-container:hover .bg {
+  -webkit-animation: fill 1s linear;
+          animation: fill 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fill {
   0% {
     height: 0;
-    background-color: #9356DC;
   }
   100% {
-    height: 19px;
-    background-color: #9356DC;
+    height: 18px;
   }
 }
 
 @keyframes fill {
   0% {
     height: 0;
-    background-color: #9356DC;
   }
   100% {
-    height: 19px;
-    background-color: #9356DC;
+    height: 18px;
   }
 }
 .preloader {
@@ -560,23 +569,14 @@
   font-size: larger;
 }
 
-@-webkit-keyframes spin {
+/*@keyframes spin {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-}
-
-@keyframes spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
+}*/
 @-webkit-keyframes disappear {
   99% {
     visibility: visible;
@@ -647,8 +647,8 @@
 .choices:hover .checkmark {
   -webkit-animation: appear 1s linear;
           animation: appear 1s linear;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -670,42 +670,41 @@
     visibility: visible;
   }
 }
+/*
 .bar {
-  position: relative;
-  background-color: green;
-  height: 75px;
-  border-top-right-radius: 21px;
-  border-bottom-right-radius: 21px;
-  width: 0%;
-  margin-top: 30px;
-  opacity: 1;
-  rotate: 0deg;
-  float: right;
-  margin-top: -45px;
-  margin-right: -20px;
+    position: relative;
+    background-color: green;
+    height: 75px;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+    width:  0%;
+    margin-top: 30px;
+    opacity: 1;
+    //rotate: 0deg;
+    //float: right;
+    margin-top: -45px;
+    margin-right: -20px;
 }
-
 .choices:hover .bar {
-  -webkit-animation: tick 1s linear;
-          animation: tick 1s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes tick {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70px;
-  }
+    animation: tick 1s linear;
+    animation-fill-mode: forwards;
 }
 
 @keyframes tick {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70px;
-  }
+    0%   { width: 0;}
+    100% { width: 270px;}
+  }*/
+.card-overlay {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgb(118, 232, 95);
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.choices:hover .card-overlay {
+  transform: translateX(10%);
 }/*# sourceMappingURL=main.css.map */
