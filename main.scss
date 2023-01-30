@@ -712,5 +712,9 @@ $tertiary: #99E2D0;
   .choices:hover .menu-text {
     width: 75%;
     text-overflow: ellipsis;
-    
+  }
+
+  .choices:hover .menu-option {
+    width: 75%;
+    text-overflow: ellipsis;
   }

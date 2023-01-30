@@ -707,4 +707,9 @@
 .choices:hover .menu-text {
   width: 75%;
   text-overflow: ellipsis;
+}
+
+.choices:hover .menu-option {
+  width: 75%;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=main.css.map */
