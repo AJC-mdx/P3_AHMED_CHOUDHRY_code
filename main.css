@@ -701,10 +701,10 @@
 }
 
 .choices:hover .menu-price {
-  transform: translateX(-15%);
+  transform: translateX(-17%);
 }
 
 .choices:hover .menu-text {
-  width: 80%;
+  width: 75%;
   text-overflow: ellipsis;
 }/*# sourceMappingURL=main.css.map */
