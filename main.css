@@ -446,6 +446,7 @@
   }
   .fill-heart {
     right: 255px;
+    margin-left: 23px;
   }
   .restaurantImg {
     height: 260px;
@@ -511,11 +512,27 @@
   margin-top: 32px;
 }
 
+.fill-heart-menu {
+  position: absolute;
+  background-color: red;
+  height: 0%;
+  width: 22px;
+  margin-left: 44px;
+  margin-top: 2px;
+}
+
 .heart-container {
   rotate: 180deg;
 }
 
 .heart-container:hover .fill-heart {
+  -webkit-animation: fill 1s linear;
+          animation: fill 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.heart-container:hover .fill-heart-menu {
   -webkit-animation: fill 1s linear;
           animation: fill 1s linear;
   -webkit-animation-fill-mode: forwards;

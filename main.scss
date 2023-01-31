@@ -503,6 +503,7 @@ $tertiary: #99E2D0;
 
 .fill-heart {
     right: 255px;
+    margin-left: 23px;
 }
 
 
@@ -586,11 +587,24 @@ $tertiary: #99E2D0;
     margin-top: 32px;
 }
 
+.fill-heart-menu {
+    position: absolute;
+    background-color: red;
+    height: 0%;
+    width: 22px;
+    margin-left: 44px;
+    margin-top: 2px;
+}
+
 .heart-container {
     rotate: 180deg;
 }
 
 .heart-container:hover .fill-heart{
+    animation: fill 1s linear;
+    animation-fill-mode: forwards;
+}
+.heart-container:hover .fill-heart-menu{
     animation: fill 1s linear;
     animation-fill-mode: forwards;
 }
