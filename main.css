@@ -308,7 +308,6 @@
   .second-half {
     display: flex;
     flex-direction: row;
-    margin-left: 35px;
   }
   .menuImg {
     height: 200px;
@@ -444,6 +443,9 @@
   .newTag2 {
     margin-top: 10px;
     margin-left: 220px;
+  }
+  .fill-heart {
+    right: 255px;
   }
   .restaurantImg {
     height: 260px;
