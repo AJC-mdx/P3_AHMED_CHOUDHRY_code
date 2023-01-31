@@ -247,12 +247,12 @@ $tertiary: #99E2D0;
 }
 
 .menu-footer {
-    margin-top: 1160px;
+    margin-top: 1180px;
 }
 
 /////MENU PAGE 2\\\\\\
 .menu-footer2 {
-    margin-top: 1260px;
+    margin-top: 1280px;
 }
 
 /////MENU PAGE 4\\\\\\
@@ -395,17 +395,17 @@ $tertiary: #99E2D0;
 }
 
 .menu-footer {
-    margin-top: 1291px;
+    margin-top: 1310px;
 }
 
 /////MENU PAGE 2\\\\\\
 .menu-footer2 {
-    margin-top: 1390px;
+    margin-top: 1410px;
 }
 
 /////MENU PAGE 4\\\\\\
 .menu-footer4 {
-    margin-top: 1290px;
+    margin-top: 1310px;
 }
 
 
@@ -533,17 +533,17 @@ $tertiary: #99E2D0;
 }
 
 .menu-footer {
-    margin-top: 39%;
+    margin-top: 41%;
 }
 
 /////MENU PAGE 2\\\\\\
 .menu-footer2 {
-    margin-top: 46%;
+    margin-top: 48%;
 }
 
 /////MENU PAGE 4\\\\\\
 .menu-footer4 {
-    margin-top: 39%;
+    margin-top: 41%;
 }
 
 }
@@ -600,7 +600,7 @@ $tertiary: #99E2D0;
   height: 100%;
   background-color: white;
   z-index: 10;
-  animation: disappear 2s linear;
+  animation: disappear 1s linear;
   animation-fill-mode: forwards;
 }
 
@@ -663,7 +663,7 @@ $tertiary: #99E2D0;
 
 //menu tick effect
 
-.checkmark {
+/*.checkmark {
     height: 40px;
     margin-top: 20px;
     font-size: 36px;
@@ -679,7 +679,20 @@ $tertiary: #99E2D0;
 @keyframes appear {
     0% {visibility: hidden;}
     100% {visibility: visible;}
-}
+}*/
+
+ .checkmark {
+    height: 40px;
+    margin-top: 20px;
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .choices:hover .checkmark {
+    transform: translateX(-50%) rotate(720deg);
+  }
 
   .card-overlay {
     width: 20%;
