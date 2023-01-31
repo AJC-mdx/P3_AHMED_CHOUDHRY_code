@@ -308,6 +308,7 @@
   .second-half {
     display: flex;
     flex-direction: row;
+    margin-left: 35px;
   }
   .menuImg {
     height: 200px;
@@ -334,6 +335,11 @@
   }
   .heart {
     margin-right: 50px;
+    top: 20px;
+  }
+  .fill-heart {
+    right: 315px;
+    top: 40px;
   }
   .footer {
     font-size: larger;

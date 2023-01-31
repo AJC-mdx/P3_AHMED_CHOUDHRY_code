@@ -326,6 +326,7 @@ $tertiary: #99E2D0;
 .second-half {
     display: flex;
     flex-direction: row;
+    margin-left: 35px;
 }
 
 .menuImg {
@@ -355,6 +356,12 @@ $tertiary: #99E2D0;
 
 .heart {
     margin-right: 50px;
+    top: 20px;
+}
+
+.fill-heart {
+    right: 315px;
+    top: 40px;
 }
 
 //footer
