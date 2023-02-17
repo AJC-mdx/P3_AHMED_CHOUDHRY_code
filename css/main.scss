@@ -4,7 +4,7 @@
 //styling for the whole page
 *{
     font-family: Roboto;
-    max-width: 100%;
+    max-width: 768px;
     text-align: center;
     text-decoration: none;
 }
@@ -267,7 +267,7 @@ $tertiary: #99E2D0;
 
 
 //////////TABLET VERSION\\\\\\\\\\
-@media only screen and (min-width:401px) and (max-width:900px) {
+@media only screen and (min-width:768px) and (max-width:992px) {
     body {
       max-width: 100%;
     }
@@ -423,7 +423,7 @@ $tertiary: #99E2D0;
 
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
 
     
 
