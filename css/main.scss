@@ -4,7 +4,7 @@
 //styling for the whole page
 *{
     font-family: Roboto;
-    max-width: 768px;
+    max-width: 100%;
     text-align: center;
     text-decoration: none;
 }
@@ -93,6 +93,21 @@ $tertiary: #99E2D0;
 .menuOptions {
     position: relative;
 }
+.menuOption1 {
+    display: inline-block;
+}
+.menuOption2 {
+    display: inline-block;
+}
+.menuOption3 {
+    display: inline-block;
+}
+.menuOption4 {
+    display: inline-block;
+}
+.menu-box {
+    display: inline-block;
+}
 .menuImg {
     height: 150px;
     width: 300px;
@@ -108,7 +123,6 @@ $tertiary: #99E2D0;
     border-bottom-right-radius: 20px;
     padding: 5px;
     margin-top: -5px;
-    margin-left: 29px;
     box-shadow: 2px 2px 12px grey;
     margin-bottom: 20px;
     color: black;
@@ -121,17 +135,13 @@ $tertiary: #99E2D0;
 .newTag {
     position: absolute;
     margin-top: 10px;
-    margin-left: 250px;
+    margin-left: 220px;
     padding: 3px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: $tertiary;
     color: #1b6f5a;
     border-radius: 5px;
-}
-.newTag2 {
-    margin-top: 10px;
-    margin-left: 250px;
 }
 
 //footer
@@ -175,7 +185,7 @@ $tertiary: #99E2D0;
 
 .restaurantImg {
     height: 260px;
-    width: 360px;
+    width: 100%;
     margin-top: -21px;
     object-fit: cover;
     object-position: 60%;
@@ -185,7 +195,7 @@ $tertiary: #99E2D0;
     position: absolute;
     background-color: #f2f2f2;
     height: max-content;
-    width: 360px;
+    width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     margin-top: -50px;
@@ -578,16 +588,17 @@ $tertiary: #99E2D0;
     position: relative;
     z-index: 1;
     rotate: 180deg;
-    margin-left: -230px;
-    margin-bottom: -60px;
+    top: 55px;
+    left: 15px;
+    height: 100%;
 }
 .fill-heart {
     position: absolute;
     background-color: red;
     height: 0%;
     width: 22px;
-    margin-left: 53px;
-    margin-top: 32px;
+    top: 56px;
+    left: 15px;
 }
 
 .fill-heart-menu {
@@ -601,6 +612,7 @@ $tertiary: #99E2D0;
 
 .heart-container {
     rotate: 180deg;
+    display: flex;
 }
 
 .heart-container:hover .fill-heart{
