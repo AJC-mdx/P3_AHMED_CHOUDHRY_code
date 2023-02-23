@@ -153,7 +153,7 @@ $tertiary: #99E2D0;
 .footer {
     background-color: rgb(55, 54, 54);
     color: white;
-    margin-top: -10px;
+    position: relative;
 }
 .footerTitle {
     padding-top: 20px;
@@ -190,7 +190,7 @@ $tertiary: #99E2D0;
 
 .restaurantImg {
     height: 260px;
-    width: 100%;
+    width: 98%;
     margin-top: -21px;
     object-fit: cover;
     object-position: 60%;
@@ -200,19 +200,10 @@ $tertiary: #99E2D0;
     position: absolute;
     background-color: #f2f2f2;
     height: max-content;
-    width: 100%;
+    width: 97%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     margin-top: -50px;
-}
-
-.menuHeartIcon {
-    position: relative;
-    height: 30px;
-    z-index: 1;
-    rotate: 180deg;
-    margin-left: -268px;
-    margin-bottom: -31px;
 }
 
 .header-text {
@@ -329,15 +320,6 @@ $tertiary: #99E2D0;
     padding-bottom: 9%;
     margin-top: 10%;
 }
-  
-// .first-half {
-//     display: flex;
-//     flex-direction: row;
-// }
-// .second-half {
-//     display: flex;
-//     flex-direction: row;
-// }
 
 .menuOption2 {
     margin-left: 20px;
@@ -377,19 +359,14 @@ $tertiary: #99E2D0;
 
 .restaurantImg {
     height: 260px;
-    width: 100%;
+    width: 98%;
     margin-top: -21px;
     object-fit: cover;
     object-position: 60%;
 }
 
-.menuHeartIcon {
-    margin-left: -717px;
-    margin-bottom: -31px;
-}
-
 .restaurantMenu {
-    width: 99%;
+    width: 98%;
     margin-top: -20px;
 }
 
@@ -459,8 +436,6 @@ $tertiary: #99E2D0;
     margin-top: 50px;
 }
 
-
-
 .newTag {
     margin-top: 10px;
     margin-left: 220px;
@@ -470,9 +445,6 @@ $tertiary: #99E2D0;
     right: 255px;
 }
 
-.fill-heart-menu {
-    left: 9px;
-}
 
 
 /////MENU PAGE\\\\\
@@ -486,23 +458,13 @@ $tertiary: #99E2D0;
     object-position: 60%;
 }
 
-.menuHeartIcon {
-    margin-left: -1410px;
-    margin-bottom: -31px;
-}
-
 .restaurantMenu {
     width: 99%;
     margin-top: -20px;
 }
 
-.full-menu {
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-}
 .choices {
-    width: 330px;
+    width: 90%;
     margin-top: 30px;
     margin-right: 100px;
 }
@@ -512,17 +474,17 @@ $tertiary: #99E2D0;
 }
 
 .menu-footer {
-    margin-top: 41%;
+    margin-top: 1340px;
 }
 
 /////MENU PAGE 2\\\\\\
 .menu-footer2 {
-    margin-top: 48%;
+    margin-top: 1440px;
 }
 
 /////MENU PAGE 4\\\\\\
 .menu-footer4 {
-    margin-top: 41%;
+    margin-top: 1340px;
 }
 
 }
@@ -562,25 +524,40 @@ $tertiary: #99E2D0;
     left: 15px;
 }
 
-.fill-heart-menu {
-    position: absolute;
-    background-color: red;
-    height: 0%;
-    width: 22px;
-    margin-left: 35px;
-    margin-top: 2px;
-}
 
 .heart-container {
     rotate: 180deg;
     display: flex;
 }
 
+
+.menuHeartIcon {
+    position: relative;
+    height: 30px;
+    z-index: 1;
+    rotate: 180deg;
+}
+
+.fill-heart-menu {
+    position: absolute;
+    background-color: red;
+    height: 0%;
+    width: 22px;
+    left: 7px;
+    top: 5px;
+}
+
+.menu-heart-container {
+    rotate: 180deg;
+    display: flex;
+    margin-right: 10px;
+}
+
 .heart-container:hover .fill-heart{
     animation: fill 1s linear;
     animation-fill-mode: forwards;
 }
-.heart-container:hover .fill-heart-menu{
+.menu-heart-container:hover .fill-heart-menu{
     animation: fill 1s linear;
     animation-fill-mode: forwards;
 }
@@ -660,27 +637,6 @@ $tertiary: #99E2D0;
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-
-
-//menu tick effect
-
-/*.checkmark {
-    height: 40px;
-    margin-top: 20px;
-    font-size: 36px;
-    visibility: hidden;
-}
-
-.choices:hover .checkmark {
-    animation: appear 1s linear;
-    animation-delay: .5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes appear {
-    0% {visibility: hidden;}
-    100% {visibility: visible;}
-}*/
 
  .checkmark {
     height: 40px;
