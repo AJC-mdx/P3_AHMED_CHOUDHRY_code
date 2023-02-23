@@ -47,6 +47,7 @@ $tertiary: #99E2D0;
     padding: 10px;
     color: white;
     background: linear-gradient(to bottom, rgb(243, 146, 243), $primary);
+    transition: 1s;
 }
 
 //main
@@ -457,42 +458,8 @@ $tertiary: #99E2D0;
     padding-bottom: 30px;
     margin-top: 50px;
 }
-  
-.first-half {
-    display: flex;
-    flex-direction: row;
-}
-.second-half {
-    display: flex;
-    flex-direction: row;
-    margin-left: 750px;
-    margin-top: -238px;
-}
-.menuOption1 {
-    margin-left: 5%;
-    margin-right: 3%;
-}
-.menuOption2 {
-    margin-right: 3%;
-}
-.menuOption3 {
-    margin-left: 3%;
-    margin-right: 3%;
-}
-.menuOption4 {
-    margin-left: 3%;
-}
-.menuImg {
-    height: 150px;
-    width: 160%;
-    object-fit: cover;
-    object-position: 60%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.menuText {
-    margin-left: 0px;
-}
+
+
 
 .newTag {
     margin-top: 10px;
@@ -565,6 +532,12 @@ $tertiary: #99E2D0;
 
 //main button effects
 .HIWoptions:hover {
+    background-color: #ecddff;
+    box-shadow: 7px 7px 17px grey;
+    cursor: pointer;
+}
+
+.exploreButton:hover {
     background-color: #ecddff;
     box-shadow: 7px 7px 17px grey;
     cursor: pointer;
