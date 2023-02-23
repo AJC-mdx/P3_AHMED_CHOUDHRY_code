@@ -315,16 +315,11 @@
     padding-bottom: 9%;
     margin-top: 10%;
   }
-  .menuOptions {
-    margin-left: 5%;
+  .menuOption2 {
+    margin-left: 20px;
   }
-  .first-half {
-    display: flex;
-    flex-direction: row;
-  }
-  .second-half {
-    display: flex;
-    flex-direction: row;
+  .menuOption4 {
+    margin-left: 20px;
   }
   .menuImg {
     height: 200px;
@@ -332,30 +327,16 @@
   }
   .menuText {
     width: 340px;
-    padding: 5px;
-    margin-top: -5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10%;
   }
   .menuText1 {
     font-size: larger;
   }
   .newTag {
-    margin-top: 2%;
-    margin-left: 35%;
+    margin-left: 260px;
   }
-  .newTag2 {
-    margin-top: 2%;
-    margin-left: 35%;
-  }
-  .heart {
-    margin-right: 50px;
-    top: 20px;
-  }
-  .fill-heart {
-    right: 315px;
-    top: 40px;
+  .heart-container {
+    margin-top: -10px;
+    margin-left: -20px;
   }
   .footer {
     font-size: larger;
@@ -454,10 +435,6 @@
     margin-left: 0px;
   }
   .newTag {
-    margin-top: 10px;
-    margin-left: 220px;
-  }
-  .newTag2 {
     margin-top: 10px;
     margin-left: 220px;
   }
