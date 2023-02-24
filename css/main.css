@@ -3,14 +3,15 @@
 * {
   font-family: Roboto;
   max-width: 100%;
+  margin: 0;
   text-align: center;
   text-decoration: none;
 }
 
 .mainLogo {
   box-shadow: 2px 2px 12px grey;
-  margin-top: -10px;
   padding: 9px;
+  padding-bottom: 10px;
 }
 
 .logo {
@@ -20,8 +21,7 @@
 .location {
   background-color: #f2f2f2;
   padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: -20px;
+  padding-bottom: 30px;
 }
 
 .bookMenu {
@@ -183,14 +183,12 @@
 
 .backArrow {
   float: left;
-  margin-top: 7px;
   color: rgb(55, 54, 54);
 }
 
 .restaurantImg {
   height: 260px;
-  width: 98%;
-  margin-top: -21px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 60%;
@@ -202,7 +200,7 @@
   background-color: #f2f2f2;
   height: -moz-max-content;
   height: max-content;
-  width: 97%;
+  width: 100%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   margin-top: -50px;
@@ -218,7 +216,6 @@
   border-bottom: solid 3px #99E2D0;
   width: 40px;
   margin-left: 30px;
-  margin-top: -15px;
 }
 
 .menu-option {
@@ -277,6 +274,7 @@
   }
   .mainLogo {
     font-size: 300%;
+    padding-bottom: 20px;
   }
   .location {
     font-size: 150%;
@@ -335,7 +333,6 @@
   }
   .restaurantImg {
     height: 260px;
-    width: 98%;
     margin-top: -21px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -343,7 +340,6 @@
        object-position: 60%;
   }
   .restaurantMenu {
-    width: 98%;
     margin-top: -20px;
   }
   .choices {
@@ -392,9 +388,11 @@
   .fill-heart {
     right: 255px;
   }
+  .mainLogo {
+    padding-bottom: 20px;
+  }
   .restaurantImg {
     height: 260px;
-    width: 100%;
     margin-top: -21px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -402,7 +400,6 @@
        object-position: 60%;
   }
   .restaurantMenu {
-    width: 99%;
     margin-top: -20px;
   }
   .choices {
@@ -435,7 +432,7 @@
     margin-left: 60%;
   }
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 215px) {
   .newTag {
     margin-top: 10px;
     margin-left: 45%;
@@ -587,15 +584,26 @@
     opacity: 1;
   }
 }
-.choices {
+.e-choices {
   animation: 2s go-up 2s linear;
-  animation-delay: -1s;
+  animation-delay: -0.5s;
+  animation-fill-mode: forwards;
+}
+
+.md-choices {
+  animation: 2s go-up 2s linear;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.d-choices {
+  animation: 2s go-up 2s linear;
   animation-fill-mode: forwards;
 }
 
 @keyframes go-up {
   0% {
-    top: 100px;
+    top: 20px;
   }
   100% {
     top: 0px;

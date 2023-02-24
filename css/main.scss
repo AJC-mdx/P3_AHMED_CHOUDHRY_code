@@ -5,6 +5,7 @@
 *{
     font-family: Roboto;
     max-width: 100%;
+    margin: 0;
     text-align: center;
     text-decoration: none;
 }
@@ -20,8 +21,8 @@ $tertiary: #99E2D0;
 //header
 .mainLogo {
     box-shadow: 2px 2px 12px grey;
-    margin-top: -10px;
     padding: 9px;
+    padding-bottom: 10px;
 }
 .logo {
     font-family: Shrikhand;
@@ -30,8 +31,7 @@ $tertiary: #99E2D0;
 .location {
     background-color: #f2f2f2;
     padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: -20px;
+    padding-bottom: 30px;
 }
 
 .bookMenu {
@@ -184,14 +184,12 @@ $tertiary: #99E2D0;
 
 .backArrow {
     float: left;
-    margin-top: 7px;
     color: rgb(55, 54, 54);
 }
 
 .restaurantImg {
     height: 260px;
-    width: 98%;
-    margin-top: -21px;
+    width: 100%;
     object-fit: cover;
     object-position: 60%;
 }
@@ -200,7 +198,7 @@ $tertiary: #99E2D0;
     position: absolute;
     background-color: #f2f2f2;
     height: max-content;
-    width: 97%;
+    width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     margin-top: -50px;
@@ -216,7 +214,6 @@ $tertiary: #99E2D0;
     border-bottom: solid 3px $tertiary;
     width: 40px;
     margin-left: 30px;
-    margin-top: -15px;
 }
 
 .menu-option {
@@ -281,6 +278,7 @@ $tertiary: #99E2D0;
     //header
     .mainLogo {
         font-size: 300%;
+        padding-bottom: 20px;
     }
 
     .location {
@@ -359,14 +357,12 @@ $tertiary: #99E2D0;
 
 .restaurantImg {
     height: 260px;
-    width: 98%;
     margin-top: -21px;
     object-fit: cover;
     object-position: 60%;
 }
 
 .restaurantMenu {
-    width: 98%;
     margin-top: -20px;
 }
 
@@ -449,17 +445,18 @@ $tertiary: #99E2D0;
 
 /////MENU PAGE\\\\\
 
+.mainLogo {
+    padding-bottom: 20px;
+}
 
 .restaurantImg {
     height: 260px;
-    width: 100%;
     margin-top: -21px;
     object-fit: cover;
     object-position: 60%;
 }
 
 .restaurantMenu {
-    width: 99%;
     margin-top: -20px;
 }
 
@@ -665,14 +662,23 @@ $tertiary: #99E2D0;
     100% {opacity: 1;}
 }
 
-.choices {
+.e-choices {
     animation: 2s go-up 2s linear;
-    animation-delay: -1s;
+    animation-delay: -0.5s;
+    animation-fill-mode: forwards;
+}
+.md-choices {
+    animation: 2s go-up 2s linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.d-choices {
+    animation: 2s go-up 2s linear;
     animation-fill-mode: forwards;
 }
 
 @keyframes go-up {
-    0% {top: 100px;}
+    0% {top: 20px;}
     100% {top: 0px;}
 }
 
