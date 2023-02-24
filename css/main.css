@@ -569,6 +569,20 @@
     opacity: 1;
   }
 }
+.choices {
+  animation: 2s go-up 2s linear;
+  animation-delay: -1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes go-up {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
 .checkmark {
   height: 40px;
   margin-top: 20px;
