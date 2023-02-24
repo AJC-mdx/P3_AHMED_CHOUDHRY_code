@@ -490,6 +490,33 @@ $tertiary: #99E2D0;
 }
 
 
+//////////SMALL SCREEN VERSION\\\\\\\\\\
+@media only screen and (max-width: 330px) {
+
+    .menu-box {
+        width: 100%;
+    }
+
+    .menuText {
+        width: 96%;
+    }
+
+    .newTag {
+    margin-top: 10px;
+    margin-left: 60%;
+    }
+}
+
+//////////SMALLER SCREEN VERSION\\\\\\\\\\
+@media only screen and (max-width: 330px) {
+
+    .newTag {
+    margin-top: 10px;
+    margin-left: 45%;
+    }
+}
+
+
 /*Animations Animations Animations Animations Animations Animations Animations Animations Animations Animations Animations Animations*/
 
 //main button effects

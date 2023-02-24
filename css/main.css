@@ -423,6 +423,24 @@
     margin-top: 1340px;
   }
 }
+@media only screen and (max-width: 330px) {
+  .menu-box {
+    width: 100%;
+  }
+  .menuText {
+    width: 96%;
+  }
+  .newTag {
+    margin-top: 10px;
+    margin-left: 60%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .newTag {
+    margin-top: 10px;
+    margin-left: 45%;
+  }
+}
 /*Animations Animations Animations Animations Animations Animations Animations Animations Animations Animations Animations Animations*/
 .HIWoptions:hover {
   background-color: #ecddff;
