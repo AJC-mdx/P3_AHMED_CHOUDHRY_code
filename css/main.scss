@@ -595,7 +595,7 @@ $tertiary: #99E2D0;
 .menu-heart-container {
     display: flex;
     margin-right: 10px;
-    
+
     animation: 0.1s flip 0.1s linear;
     animation-delay: -0.5s;
     animation-fill-mode: forwards;
@@ -716,24 +716,23 @@ $tertiary: #99E2D0;
     font-size: 36px;
     color: white;
     position: absolute;
-    // transform: translateX(100%);
-    // transition: transform 0.5s ease-in-out;
-    left: 45px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
   }
+  .choices:hover .checkmark {
+    transform: translateX(-50%) rotate(360deg);
+  }
+
 //   .choices:hover .checkmark {
-//     transform: translateX(-50%) rotate(720deg);
+//     animation: 1s rotate 1s linear;
+//     animation-delay: -0.5s;
+//     animation-fill-mode: both;
 //   }
 
-  .choices:hover .checkmark {
-    animation: 1s rotate 1s linear;
-    animation-delay: -0.5s;
-    animation-fill-mode: both;
-  }
-
-  @keyframes rotate {
-    25% {transform: rotate(180deg);}
-    100% {transform: rotate(720deg);}
-}
+//   @keyframes rotate {
+//     25% {transform: rotate(180deg);}
+//     100% {transform: rotate(720deg);}
+// }
 
   .card-overlay {
     width: 20%;
